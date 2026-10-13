@@ -1,0 +1,34 @@
+Write a shell script to stimulate the file commands: rm, cp, cat, mv, cmp, wc, split, diff. 
+AIM 
+To demonstrate basic Linux file manipulation commands: rm, cp, cat, mv, cmp, wc, split, and diff. 
+PROCEDURE 
+STEP 1: Start the process. 
+STEP 2: In the Linux command prompt, perform operations using file commands. 
+STEP 3: Use vi editor to create files: vi filename. Use mkdir to create directories. 
+STEP 4: Use cat command to create (cat >filename), append (cat >>filename), and display (cat 
+filename) files. 
+STEP 5: Use wc command to count lines, characters and bytes: wc filename. 
+STEP 6: Use cp to copy a file: cp oldfile newfile. 
+STEP 7: Use cmp to compare two files, rm to remove a file, mv to move/rename a file. 
+STEP 8: Use split to split a file into parts. Use diff to show differences between two files. 
+STEP 9: Type all commands in a shell script file (vi filename.sh) and execute: sh filename.sh. 
+STEP 10: Stop the process. 
+SHELL SCRIPT 
+ls
+                         # To list all files in the directory 
+cp file1 file2             # To copy a file 
+cat file2                  # To view contents of file2 
+mv file3 file4             # To move/rename a file 
+cat file4                  # To display contents of file4 
+wc file1                   # To see word/line/char count 
+wc -l file1                # To count only lines 
+wc -w file1                # To count only words 
+wc -c file1                # To count only characters 
+split -3 file1             # To split file into parts of 3 lines 
+head -3 file1              
+# To display first 3 lines 
+tail -3 file1              # To display last 3 lines 
+cmp file1 file2            # To compare two files byte by byte 
+diff file1 file2           # To show line-by-line differences 
+rm file6                   # To remove file6 
+rm -r *                    # To remove all files in the directory
